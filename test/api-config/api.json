@@ -1,0 +1,93 @@
+{
+    "getDate": {
+        "url": "/getDate",
+        "method": "get",
+        "response": {
+            "body": {
+                "dateList": ["2013", "2014"]
+            },
+            "status": 404,
+            "header": {
+                "Cache-Control": "no-cache",
+                "Etag": "1234"
+            }
+        }
+    },
+    "getInitData": {
+        "url": "/api/fdse/opr/getInitData",
+        "method": "GET",
+        "response": {
+            "body": ["123570"],
+            "header": {
+                "Cache-Control": "no-cache"
+            }
+        }
+    },
+    "saveEvaluation": {
+        "url": "/api/fdse/opr/saveEvaluation",
+        "method": "post",
+        "request": [{
+            "body": {
+                "index": 2
+            },
+            "header": {},
+            "response": {
+                "index": 3
+            }
+        }, {
+            "body": {
+                "index": 1
+            },
+            "header": {},
+            "response": {
+                "index": 4
+            }
+        }]
+    },
+    "delEvaluation":{
+        "url": "/api/fdse/opr/delEvaluation",
+        "method": "delete",
+        "request": [{
+            "body": {
+                "id": 1001
+            },
+            "header": {},
+            "response": {
+                "res": "删除成功"
+            }
+        },{
+            "body": {
+                "id": 1002
+            },
+            "status": 404,
+            "header": {},
+            "response": {
+                "res": "删除失败"
+            }
+        }]
+    },
+    "putEvaluation":{
+        "url": "/api/fdse/opr/createEvaluation",
+        "method": "put",
+        "request": [{
+            "body": {
+                "id": 1001
+            },
+            "header": {},
+            "response": {
+                "res": "PUT成功"
+            }
+        },{
+            "body": {
+                "id": 1002
+            },
+            "status": 404,
+            "header": {},
+            "response": {
+                "res": "PUT失败"
+            }
+        }]
+    }
+
+
+}

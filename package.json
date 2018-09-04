@@ -1,0 +1,22 @@
+{
+  "name": "weavers",
+  "version": "0.0.1",
+  "description": "a mock server base on koa",
+  "main": "main.js",
+  "scripts": {
+    "test": "node ./src/main.js 3000"
+  },
+  "author": "thewindsword",
+  "license": "MIT",
+  "dependencies": {
+    "co-body": "^6.0.0",
+    "co-views": "^2.1.0",
+    "ejs": "^2.6.1",
+    "koa": "^2.5.1",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.8.1",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.1.4",
+    "mockjs": "^1.0.1-beta3"
+  }
+}

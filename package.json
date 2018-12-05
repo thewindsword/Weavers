@@ -1,22 +1,25 @@
 {
   "name": "weavers",
-  "version": "0.0.1",
-  "description": "a mock server base on koa",
-  "main": "main.js",
+  "version": "1.0.0",
+  "description": "a little mock proxy RESTful server",
+  "main": "index.js",
   "scripts": {
-    "test": "node ./src/main.js 3000"
+    "dev": "egg-bin dev"
   },
+  "repository": "git+https://github.com/thewindsword/Weavers.git",
+  "keywords": [
+    "mock",
+    "proxy",
+    "RESTful"
+  ],
   "author": "thewindsword",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thewindsword/Weavers/issues"
+  },
+  "homepage": "https://github.com/thewindsword/Weavers#readme",
   "dependencies": {
-    "co-body": "^6.0.0",
-    "co-views": "^2.1.0",
-    "ejs": "^2.6.1",
-    "koa": "^2.5.1",
-    "koa-router": "^7.4.0",
-    "koa-session": "^5.8.1",
-    "koa-static": "^5.0.0",
-    "koa-views": "^6.1.4",
-    "mockjs": "^1.0.1-beta3"
+    "egg": "^2.14.1",
+    "egg-bin": "^4.9.0"
   }
 }

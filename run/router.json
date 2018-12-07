@@ -1,0 +1,53 @@
+[
+  {
+    "name": "direct",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/fdse/opr/getInitData",
+    "regexp": "/^\\/api\\/fdse\\/opr\\/getInitData(?:\\/(?=$))?$/",
+    "stack": [
+      "anonymous",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "direct",
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/fdse/opr/statistics",
+    "regexp": "/^\\/api\\/fdse\\/opr\\/statistics(?:\\/(?=$))?$/",
+    "stack": [
+      "anonymous",
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": 0,
+        "prefix": "",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": true,
+        "pattern": ".*"
+      }
+    ],
+    "path": "*",
+    "regexp": "/^((?:.*))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  }
+]
